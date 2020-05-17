@@ -1,21 +1,21 @@
+---
 baseURL: https://example.com
 languageCode: en-us
 title: Yourfolio Theme
 theme: yourfolio
-disableKinds: [RSS, taxonomy, taxonomyTerm]
+disableKinds:
+- RSS
+- taxonomy
+- taxonomyTerm
 googleAnalytics: UA-XXXXX-Y
-
-# Menu items
 menu:
   main:
-  - name: About
-    weight: 1
-    url: /about
-  - name: Contact
+  - url: "/contact"
+    name: Contact
     weight: 2
-    url: /contact
-
-# Custom params
+  - url: "/about"
+    name: About
+    weight: 1
 params:
   env: development
   logoImage: img/logo.png
